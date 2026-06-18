@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native"
+import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
     return (
@@ -9,47 +9,49 @@ export default function Index() {
 
 
             <View style={styles.container1}>
-                <Text>Contato</Text>
+                <Image style={styles.imagem} source={ require('../../assets/fotoperfil.png') }/>
+                <Text style={styles.name}>Contato</Text>
+                
                 <Text style={styles.mens}>Mensagem...</Text>
                 <Text style={styles.hour}> 12:34 </Text>
             </View>
             <View style={styles.container2}>
-                <Text>Contato1</Text>
+                <Text style={styles.name}>Contato1</Text>
                 <Text style={styles.mens}>Mensagem...</Text>
                 <Text style={styles.hour}> 12:34 </Text>
             </View>
             <View style={styles.container3}>
-                <Text>Contato 2</Text>
+                <Text style={styles.name}>Contato 2</Text>
                 <Text style={styles.mens}>Mensagem...</Text>
                 <Text style={styles.hour}> 12:34 </Text>
             </View>
             <View style={styles.container4}>
-                <Text>Contato 3</Text>
+                <Text style={styles.name}>Contato 3</Text>
                 <Text style={styles.mens}>Mensagem...</Text>
                 <Text style={styles.hour}> 12:34 </Text>
             </View>
             <View style={styles.container5}>
-                <Text>Contato 4</Text>
+                <Text style={styles.name}>Contato 4</Text>
                 <Text style={styles.mens}>Mensagem...</Text>
                 <Text style={styles.hour}> 12:34 </Text>
             </View>
             <View style={styles.container6}>
-                <Text>Contato 5</Text>
+                <Text style={styles.name}>Contato 5</Text>
                 <Text style={styles.mens}>Mensagem...</Text>
                 <Text style={styles.hour}> 12:34 </Text>
             </View>
             <View style={styles.container7}>
-                <Text>Contato 6</Text>
+                <Text style={styles.name}>Contato 6</Text>
                 <Text style={styles.mens}>Mensagem...</Text>
                 <Text style={styles.hour}> 12:34 </Text>
             </View>
             <View style={styles.container8}>
-                <Text>Contato 7</Text>
+                <Text style={styles.name}>Contato 7</Text>
                 <Text style={styles.mens}>Mensagem...</Text>
                 <Text style={styles.hour}> 12:34 </Text>
             </View>
             <View style={styles.container9}>
-                <Text>Contato 8</Text>
+                <Text style={styles.name}>Contato 8</Text>
                 <Text style={styles.mens}>Mensagem...</Text>
                 <Text style={styles.hour}> 12:34 </Text>
             </View>
@@ -68,49 +70,69 @@ const styles = StyleSheet.create({
         overflow: 'scroll',
     },
 
+    imagem: {
+        flex: 1,
+        width: 40,
+        height: 40,
+    },
+
+    name: {
+        color: 'white',
+        marginLeft: 50,
+    },
+
     container1: {
         width: '100%',
         height: '12%',
+        backgroundColor: 'black',
     },
 
     container2: {
         width: '100%',
         height: '12%',
+        backgroundColor: 'black',
     },
 
     container3: {
         width: '100%',
         height: '12%',
+        backgroundColor: 'black',
     },
 
     container4: {
         width: '100%',
         height: '12%',
+        backgroundColor: 'black',
     },
 
     container5: {
         width: '100%',
         height: '12%',
+        backgroundColor: 'black',
     },
 
     container6: {
         width: '100%',
         height: '12%',
+        backgroundColor: 'black',
     },
 
     container7: {
         width: '100%',
         height: '12%',
+        backgroundColor: 'black',
     },
 
     container8: {
         width: '100%',
         height: '12%',
+        backgroundColor: 'black',
     },
 
     container9: {
         width: '100%',
         height: '12%',
+        backgroundColor: 'black',
     },
 
     mens: {
