@@ -5,22 +5,19 @@ export default function Index() {
         <View style={styles.all}>
 
             <View style={styles.topIcons}>
+                <View style={styles.circle}>
+                    <Text style={{ color: '#fff', fontSize: 16, fontWeight: 'bold' }}>···</Text>
+                </View>
                 <View style={{ flexDirection: 'row', gap: 12 }}>
-                    <View style={styles.circle}>
-                        <Text style={{ color: '#fff' }}>
-                            <Image style={{ width: 20, height: 20, tintColor: 'white' }} source={require('../../assets/camera.png')} />
-                        </Text>
-                    </View>
-                    <View style={[styles.circle, { backgroundColor: '#37c957'}]}>
+                    <View style={[styles.circle, { backgroundColor: '#37c957' }]}>
                         <Text style={{ color: '#000', fontSize: 25, fontWeight: 'bold' }}>+</Text>
                     </View>
                 </View>
             </View>
 
-            <Text style={styles.titulo}>Comunidades</Text>
+            <Text style={styles.titulo}>Ligações</Text>
 
         </View>
-
     );
 }
 
@@ -31,11 +28,11 @@ const styles = StyleSheet.create({
         backgroundColor: 'black',
     },
 
-    //ICONES
+    //ICONE
 
     topIcons: {
         flexDirection: 'row',
-        justifyContent: 'flex-end',
+        justifyContent: 'space-between',
         paddingHorizontal: 16,
         marginTop: 20,
     },
