@@ -1,5 +1,5 @@
 import { Image, StyleSheet, Text, View } from "react-native";
-import { SearchBar } from "react-native-screens";
+import Feather from '@expo/vector-icons/Feather';
 
 export default function Index() {
     return (
@@ -12,12 +12,10 @@ export default function Index() {
 
                 <View style={{ flexDirection: 'row', gap: 12 }}>
                     <View style={styles.circle}>
-                        <Text style={{ color: '#fff' }}>
-                            <Image style={{width: 20, height: 20, tintColor: 'white'}} source={require('../../assets/camera.png')} />
-                        </Text>
+                        <Text><Feather name="camera" size={20} color="white" /></Text>
                     </View>
                     <View style={[styles.circle, { backgroundColor: '#37c957' }]}>
-                        <Text style={{ color: '#000', fontSize: 25, fontWeight: 'bold'}}>+</Text>
+                        <Text style={{ color: '#000', fontSize: 20, fontWeight: 'bold'}}>+</Text>
                     </View>
                 </View>
             </View>
@@ -26,8 +24,8 @@ export default function Index() {
 
             <View style={styles.searchcont}>
                 <View style={styles.searchbar}>
-                    <Image style={styles.searchimg} source={require('../../assets/lupa.png')} />
-                    <Text style={styles.searchtext}>Pesquisar</Text>
+                    <Feather name="search" size={17} color="#8e8e93" />
+                    <Text style={styles.searchtext}> Pesquisar</Text>
                 </View>
             </View>
 
@@ -182,13 +180,6 @@ const styles = StyleSheet.create({
         height: 38,
         borderRadius: 10,
         paddingHorizontal: 12,
-    },
-
-    searchimg: {
-        width: 30,
-        height: 30,
-        tintColor: '#8e8e93',
-        marginRight: 8,
     },
 
     searchtext: {

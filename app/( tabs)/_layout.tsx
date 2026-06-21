@@ -1,4 +1,5 @@
 import { Tabs } from "expo-router"
+import { Image } from 'react-native';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 
 
@@ -51,6 +52,23 @@ export default function RootLayout() {
                     title: "Conversas",
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons name="chatbubbles" size={size} color={color} />
+                    )
+                }}
+            />
+            <Tabs.Screen
+                name="index perfil"
+                options={{
+                    title: "Você",
+                    tabBarIcon: ({ focused }) => (
+                        <Image
+                            source={require('../../assets/fotoperfil.png')}
+                            style={{
+                                width: 24,
+                                height: 24,
+                                borderRadius: 12, 
+                                borderWidth: focused ? 2 : 0, 
+                                borderColor: 'white'
+                            }} />
                     )
                 }}
             />
